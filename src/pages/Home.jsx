@@ -24,7 +24,7 @@ function Home() {
           zIndex: -1
         }}
       >
-        <source src="./src/assets/restau.mp4" type="video/mp4" />
+        <source src="/restau.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
