@@ -14,7 +14,7 @@ export default function ShowMenu() {
   const fetchMenu = async () => {
     try {
       setLoading(true);
-      const res = await api.get('/menu');
+      const res = await api.get('/');
       setItems(res.data);
     } catch (err) {
       console.error(err);
