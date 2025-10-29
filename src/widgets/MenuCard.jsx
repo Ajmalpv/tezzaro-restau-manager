@@ -11,7 +11,7 @@ export default function MenuCard({ item, onDeleteSuccess, onUpdated }) {
     if (!window.confirm('Delete this item?')) return;
     try {
       setDeleting(true);
-      await api.delete(`/menu/${item.id}`);
+      await api.delete(`/${item.id}`);
       onDeleteSuccess(item.id);
     } catch (err) {
       console.error(err);

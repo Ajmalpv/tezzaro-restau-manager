@@ -41,7 +41,7 @@ function AddMenu() {
       return;
     }
     try {
-      await axios.post('http://localhost:5000/menu', menuData);
+      await axios.post('https://patient-list-backend.onrender.com/menu', menuData);
       alert('Menu item added successfully!');
       setMenuData({
         name: '',
